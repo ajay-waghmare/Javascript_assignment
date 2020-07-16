@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = ['ajay', 'waghmare', 32, ['1', '2', '4', '7', '2']];
+        let arr2 = ['shanghai', 'banglore', 'mumbai'];
+        console.log(arr);
+
+        console.log(Array.isArray(arr));
+
+        console.log(arr.reverse())
+
+        console.log(arr[3]);
+
+        console.log(arr.concat(arr2));
+
+        // Appending an element
+        // At the start
+        arr2.unshift('tokyo');
+        console.log(arr2);
+        // At the end
+        arr2.push('helsinki');
+        console.log(arr2);
+
+        // Removing an element
+        // From the start
+        arr2.shift('tokyo');
+        console.log(arr2);
+
+        // From the end
+        console.log(arr2.pop());
+
+        console.log(arr2.push('ahmednagar'))
+        arr2[1] = 'pune'
+        console.log(arr2);
+
+        arr2[arr2.length] = 'delhi'
+        delete arr2[0];
+        console.log(arr2);
+
+        arr2.splice(2, 0, "New york ", "London");
+        console.log(arr2);
+
+        arr3 = arr2.concat(arr);
+        console.log(arr3);
+
+        str = ' Hello this is ajay waghmare'
+        str1 = str.charAt(0);
+        console.log(str)
+        console.log(str1)
+
+        str = ' Hello this is ajay waghmare'
+        str1 = str.charCodeAt(0);
+
+        var str = "Hello World!";
+        var n = str.length;
+        console.log(n);
+    </script>
+
+</body>
+
+</html>
